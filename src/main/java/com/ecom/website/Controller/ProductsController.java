@@ -27,4 +27,11 @@ public class ProductsController {
     public ResponseEntity<ProductsDTO> addProduct(@PathVariable Long categoryId, @RequestBody ProductsDTO productsDTO){
         return new ResponseEntity<> (productsServices.createProduct(categoryId,productsDTO), HttpStatus.CREATED);
     }
+
+//    public ResponseEntity<ProductsDTO> fetchAllProducts(@PathVariable Long productId){
+//        //return new ResponseEntity<> (productsServices.createProduct(categoryId,productsDTO), HttpStatus.CREATED);
+//        return ResponseEntity.ok(productId);
+//    }
+
+
 }
